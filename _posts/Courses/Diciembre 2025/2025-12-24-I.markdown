@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Diciembre 24, 2025 "
+date:       2025-12-24 00:00:00 +0000
+category:   Diciembre-2025
+---
+    Mañana habrá en el cielo fuegos artificiales,
+    como flores serán, coloridas se mostrarán.
+    Y muchos se sorprenderán, muchos diran "¡Que bello!"
+    y yo miraré mi cielo raso sin poder dormir...

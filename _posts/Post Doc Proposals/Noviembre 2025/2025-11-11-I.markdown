@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Noviembre 11, 2025 "
+date:       2025-11-11 00:00:00 +0000
+category:   Noviembre-2025
+---
+    No hay escape de la muerte, 
+    ni existe la buena suerte.
+    Y no existe una buena manera
+    de vivir la vida buena...

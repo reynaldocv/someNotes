@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanaque Dinámico 2025</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 id="yearHeader">Almanaque 2025</h1>
+            <p class="subtitle">Generación interactiva con HTML, CSS y JavaScript nativo</p>
+        </header>
+
+        <div class="controls">
+            <button class="btn active" onclick="changeYear(2025)">Año 2025</button>
+            <button class="btn" onclick="changeYear(2026)">Año 2026</button>
+        </div>
+
+        <div class="calendar-grid" id="calendarGrid"></div>
+
+        <div class="footer">
+            Almanaque Interactivo v2.0 • Renderizado dinámico en tiempo de ejecución
+        </div>
+    </div>
+
+    <script>
+        const meses = [
+            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ];
+        
+        const diasSemana = ["Lu", "Ma", "Mi", "Ju", "Vi", "Sá", "Do"];
+
+        function renderCalendar(year) {
+            document.getElementById('yearHeader').innerText = `Almanaque ${year}`;
+            const grid = document.getElementById('calendarGrid');
+            grid.innerHTML = '';
+
+            for (let month = 0; month < 12; month++) {
+                const card = document.createElement('div');
+                card.className = 'month-card';
+
+                const title = document.createElement('div');
+                title.className = 'month-title';
+                title.innerText = meses[month];
+                card.appendChild(title);
+
+                const weekdaysDiv = document.createElement('div');
+                weekdaysDiv.className = 'weekdays';
+                diasSemana.forEach(d => {
+                    const dayName = document.createElement('div');
+                    dayName.innerText = d;
+                    weekdaysDiv.appendChild(dayName);
+                });
+                card.appendChild(weekdaysDiv);
+
+                const daysDiv = document.createElement('div');
+                daysDiv.className = 'days';
+
+                // Primer día del mes (0 = Domingo, 1 = Lunes, etc.)
+                let firstDayIndex = new Date(year, month, 1).getDay();
+                // Ajustar para que la semana empiece en Lunes (0 -> Lu, 6 -> Do)
+                // En JS: 0=Dom, 1=Lun, 2=Mar, 3=Mie, 4=Jue, 5=Vie, 6=Sab
+                let adjustedFirstDay = firstDayIndex === 0 ? 6 : firstDayIndex - 1;
+
+                const totalDays = new Date(year, month + 1, 0).getDate();
+
+                // Espacios vacíos
+                for (let i = 0; i < adjustedFirstDay; i++) {
+                    const emptyDay = document.createElement('div');
+                    emptyDay.className = 'day empty';
+                    emptyDay.innerText = '';
+                    daysDiv.appendChild(emptyDay);
+                }
+
+                // Días del mes
+                for (let day = 1; day <= totalDays; day++) {
+                    const dayDiv = document.createElement('div');
+                    dayDiv.className = 'day';
+                    dayDiv.innerText = day;
+
+                    // Verificar si es Domingo
+                    let currentDayOfWeek = (adjustedFirstDay + day - 1) % 7;
+                    if (currentDayOfWeek === 6) {
+                        dayDiv.classList.add('sunday');
+                    }
+
+                    daysDiv.appendChild(dayDiv);
+                }
+
+                card.appendChild(daysDiv);
+                grid.appendChild(card);
+            }
+        }
+
+        function changeYear(year) {
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(btn => {
+                if (btn.innerText.includes(year)) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            renderCalendar(year);
+        }
+
+        // Inicializar
+        renderCalendar(2025);
+    </script>
+</body>
+</html>

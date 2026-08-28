@@ -1,0 +1,11 @@
+---
+layout:     poema
+title:      "Octubre 07, 2025"
+date:       2025-10-07 00:00:00 +0000
+category:   Octubre-2025
+---
+    A veces no es lo que parece, 
+    es una sombra que se mece, 
+    una idea que no desaparece... 
+    una duda que a lo lejos crece. 
+    

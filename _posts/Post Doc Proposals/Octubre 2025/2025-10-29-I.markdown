@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      "Octubre 29, 2025"
+date:       2025-10-29 00:00:00 +0000
+category:   Octubre-2025
+---
+    Podrías ser la persona más feliz del mundo, 
+    y tener todo lo que alguna vez — deseaste...
+    Podrías ser un hacedor — de un cosmos perfecto.
+    ¡La verdad! ¡Que aburrido que sería — todo esto! 

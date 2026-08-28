@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Diciembre 01, 2025 "
+date:       2025-12-01 00:00:00 +0000
+category:   Diciembre-2025
+---
+    Al inicio eran tres abrigos...
+    El Rojo fue para un amigo, 
+    el Blanco se quedó contigo.
+    y el negro se hizo de mi abrigo...

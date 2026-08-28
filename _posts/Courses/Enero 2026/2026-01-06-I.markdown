@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Enero 06, 2026 "
+date:       2026-01-06 00:00:00 +0000
+category:   Enero-2026
+---
+    Y me escapé de un lugar pequeño y tranquilo
+    para un infierno donde todo está ardiendo...
+    Y ahí conocí a mucha gente — quemándose
+    y a pocas personas — queriéndose quemar.

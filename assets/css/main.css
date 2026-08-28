@@ -1,0 +1,29 @@
+.contenedor-imagen {
+  position: relative; /* Necesario para posicionar el texto */
+  display: inline-block; /* Ajusta el contenedor al tamaño de la imagen */
+  text-align: center;
+}
+
+.contenedor-imagen img {
+  width: 100%; /* Ajusta según sea necesario */
+  height: auto;
+}
+
+.texto-centrado {
+  position: absolute;
+  top: 50%; /* Mueve al 50% de altura */
+  left: 50%; /* Mueve al 50% de ancho */
+  transform: translate(-50%, -50%); /* Centra el elemento exactamente */
+  color: white; /* Color del texto */
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Mejora la legibilidad */
+}
+
+.background-image{
+  display: flex;
+  align-items: center; /* Centrado vertical */
+  justify-content: center; /* Centrado horizontal (opcional) */
+  height: 200px; /* O la altura que desees */
+  overflow: hidden; /* Para ocultar cualquier parte de la imagen que sobresalga */
+}

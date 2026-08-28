@@ -1,0 +1,11 @@
+---
+layout:     poema
+title:      " Diciembre 12, 2025 "
+date:       2025-12-12 00:00:00 +0000
+category:   Diciembre-2025
+---
+    Tarde o temprano
+    tú y yo habremos de morir;  
+    tú bajo un cielo caribeño,  
+    yo donde mueren los capulíes.
+

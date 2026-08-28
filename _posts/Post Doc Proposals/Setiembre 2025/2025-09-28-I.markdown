@@ -1,0 +1,11 @@
+---
+layout:     poema
+title:      "Setiembre 28, 2025"
+date:       2025-09-28 00:00:00 +0000
+category:   Setiembre-2025
+---
+    Donde antes siempre eran dos aves libres 
+    símbolo de una fluída comunicación, 
+    hoy queda solo una — volando en soledad, 
+    dice que mi voz — no te ha de llegar jamás. 
+    

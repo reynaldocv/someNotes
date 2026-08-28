@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Diciembre 30, 2025 "
+date:       2025-12-30 00:00:00 +0000
+category:   Diciembre-2025
+---
+    Es domingo y desde que no estás
+    no hay con quién ir por una pizza...
+    No es que no pueda ir solo, tú lo sabes:
+    es que ocho fatias es mucho para mí.

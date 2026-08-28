@@ -1,0 +1,11 @@
+---
+layout:     poema
+title:      " Diciembre 08, 2025 "
+date:       2025-12-08 00:00:00 +0000
+category:   Diciembre-2025
+---
+    ¿Qué será de mi humedad sin tus besos?
+    ¿De mí calidez sin tus apapachos?
+    ¿De mi felicidad sin tus recuerdos?
+    Bueno o malo... pronto lo sabré, 
+    agua mar para calmar mi sed...

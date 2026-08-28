@@ -1,0 +1,11 @@
+---
+layout:     poema
+title:      " Noviembre 08, 2025 "
+date:       2025-11-08 00:00:00 +0000
+category:   Noviembre-2025
+---
+    Hoy llovía
+    y no era como en los días pasados...
+    Hoy llovía
+    soledad con aroma, 
+    a dulce melancolía.

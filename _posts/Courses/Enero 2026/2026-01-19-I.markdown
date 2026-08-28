@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Enero 19, 2026 "
+date:       2026-01-19 00:00:00 +0000
+category:   Enero-2026
+---
+    Quisiera regresar unos seis a siete años.
+    Verle la cara, sonreírle y decirle que lo amo.
+    Que sin él, guardo un amor y un odio por el pasado.
+    Que sin él, cuento los días, los meses y los años.

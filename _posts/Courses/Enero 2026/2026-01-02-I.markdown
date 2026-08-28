@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Enero 02, 2026 "
+date:       2026-01-02 00:00:00 +0000
+category:   Enero-2026
+---
+    Me gustaría aprender a estar quieto, 
+    consolarme con un atardecer; 
+    y solo sé caminar y correr
+    para olvidarme y extirparme el ayer...

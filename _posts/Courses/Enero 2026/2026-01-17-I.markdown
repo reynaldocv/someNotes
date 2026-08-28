@@ -1,0 +1,13 @@
+---
+layout:     poema
+title:      " Enero 17, 2026 "
+date:       2026-01-17 00:00:00 +0000
+category:   Enero-2026
+---
+    «¿De qué te preocupas?
+    Estaré ahí para hacerte caer; 
+    y una vez en el piso, 
+    te ayudaré a ponerte de pie...»
+    Era una pequeña conversación 
+    entre mi cerebro y mi corazón.
+

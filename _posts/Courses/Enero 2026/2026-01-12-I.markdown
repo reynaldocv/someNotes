@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Enero 12, 2026 "
+date:       2026-01-12 00:00:00 +0000
+category:   Enero-2026
+---
+    Quiero volver a mi hogar,
+    pero olvidé mi procedencia
+    persiguiendo un supuesto futuro
+    que nunca fue de mi preferencia.

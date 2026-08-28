@@ -1,0 +1,11 @@
+---
+layout:     poema
+title:      "Octubre 01, 2025"
+date:       2025-10-01 00:00:00 +0000
+category:   Octubre-2025
+---
+    Y una vez más — en tu vida se apagaron las luces; 
+    la brisa que besaba tus labios — se hizo tormenta. 
+    El cielo que tanto adorabas se te llenó de nubes. 
+    y yo sin tus estrellas — perdido navegando a ciegas. 
+    

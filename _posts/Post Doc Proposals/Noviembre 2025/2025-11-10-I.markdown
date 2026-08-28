@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Noviembre 10, 2025 "
+date:       2025-11-10 00:00:00 +0000
+category:   Noviembre-2025
+---
+    Aquí hay estrofas que no tienen sentido,
+    mas que quisieron nacer — siendo rabiscos.
+    Querían ser poemas — mas es mediocre su existir, 
+    son ideas incompletas a medio transcribir...

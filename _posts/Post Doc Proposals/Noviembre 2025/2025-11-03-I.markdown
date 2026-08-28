@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Noviembre 03, 2025 "
+date:       2025-11-03 00:00:00 +0000
+category:   Noviembre-2025
+---
+    Y la llovizna está que se mece con la noche,
+    suave entre la luz amarillenta de los coches...
+    Y el viento suspira cruel en sus cabellos, 
+    y yo enamorado de ella, perplejo — a lo lejos...

@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      "Octubre 28, 2025"
+date:       2025-10-28 00:00:00 +0000
+category:   Octubre-2025
+---
+    Por favor no te levantes — sique así
+    que tus herida se van a abrir.
+    Por favor quédate ahí — donde estás,
+    donde no te pueda lastimar...

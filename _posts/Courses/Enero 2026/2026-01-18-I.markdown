@@ -1,0 +1,12 @@
+---
+layout:     poema
+title:      " Enero 18, 2026 "
+date:       2026-01-18 00:00:00 +0000
+category:   Enero-2026
+---
+    Y un día regresarás a tu hogar
+    y no restará cosa alguna en pie. 
+    Habrán sido los años llevándose todo,
+    será un pozo seco, sin agua en el fondo. 
+    
+

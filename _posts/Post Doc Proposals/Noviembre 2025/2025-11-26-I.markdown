@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Noviembre 26, 2025 "
+date:       2025-11-26 00:00:00 +0000
+category:   Noviembre-2025
+---
+    ¿Para qué quiero libertad si tú me regalas las alas?
+    ¿Para qué quiero el silencio si tú me regalas la paz?
+    ¿Para qué quiero sol si tus besos me profesan calor?
+    ¿Y para qué te quiero si te vas y te llevas tu amor?

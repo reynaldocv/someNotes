@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Diciembre 20, 2025 "
+date:       2025-12-20 00:00:00 +0000
+category:   Diciembre-2025
+---
+    ¿La vida? Igual de siempre, sigo sin entenderla; 
+    mas, día a día, voy entendiéndola un poco más.
+    Entendí que su sentido de humor es un pez; 
+    que ella es antidoto y veneno, todo al revés.

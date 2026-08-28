@@ -1,0 +1,14 @@
+---
+layout:     poema
+title:      " Enero 10, 2026 "
+date:       2026-01-10 00:00:00 +0000
+category:   Enero-2026
+---
+    Anteayer 
+    caminé porque no quería correr.
+    Ayer 
+    corrí porque no se daba bien trotar.
+    Hoy 
+    voy a trotar porque no hay nada más que hacer
+    ¿Mañana? Supongo que me detendré...
+

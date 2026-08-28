@@ -1,0 +1,12 @@
+---
+layout:     poema
+title:      " Diciembre 14, 2025 "
+date:       2025-12-14 00:00:00 +0000
+category:   Diciembre-2025
+---
+    En esta noche
+    quiero escribirle a la luna,
+    quizás unos versos borrachos
+    o unas estrofas desnudas; 
+    Tal vez, solo esta vez 
+    escriba que la extraño.

@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Noviembre 15, 2025 "
+date:       2025-11-15 00:00:00 +0000
+category:   Noviembre-2025
+---
+    De mil y un maneras en esta vida te perdí.
+    Y a los recovecos de tu casa jamás volví.
+    Y el precio a pagar fue la inociencia de tu ser,
+    y la moneda de cambio fue el no volverte a ver...

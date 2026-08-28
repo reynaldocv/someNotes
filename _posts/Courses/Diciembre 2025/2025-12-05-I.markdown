@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      " Diciembre 05, 2025 "
+date:       2025-12-05 00:00:00 +0000
+category:   Diciembre-2025
+---
+    Aquí las nostalgías son el pan de cada día, 
+    uno se desangra sin siquiera tener heridas...
+    Aquí está que llueve sin haber nubes en el cielo.
+    Aquí sin ti sigo respirando ― aún ya estando muerto.

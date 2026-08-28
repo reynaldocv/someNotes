@@ -1,0 +1,11 @@
+---
+layout:     poema
+title:      " Diciembre 22, 2025 "
+date:       2025-12-22 00:00:00 +0000
+category:   Diciembre-2025
+---
+    Ahí está bailando jazz en mi mente
+    como un trueno en una tormenta en abril...
+    Ahí viene una vez más, la niña muerte
+    para seducirme y brindarme un final...
+
