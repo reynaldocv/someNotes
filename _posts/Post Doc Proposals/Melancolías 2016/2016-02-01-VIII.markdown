@@ -1,0 +1,10 @@
+---
+layout: poema
+title:  "Melancolía VIII"
+date:   2016-02-01 16:59:43 +0000
+category: Melancolías-2016
+---
+    A veces el decir adiós
+    es la única manera de tener algo mejor.
+    Es sensata y verdadera esta cruel expresión
+    que al hacerlo, duele en el corazón...

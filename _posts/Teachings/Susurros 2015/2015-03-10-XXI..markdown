@@ -1,0 +1,10 @@
+---
+layout: poema
+title:  "Susurro XXI"
+date:   2015-03-10 16:59:43 +0000
+category: Susurros-2015
+---
+    Mira los pétalos de cerezo caer
+    que me llenan de amor y dolor a la vez.
+    Escucha el sonido al desprenderse
+    es el llanto de alguien que perdió su fe...   

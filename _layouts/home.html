@@ -14,34 +14,12 @@
   <!-- Top header -->
   <div class="w3-container w3-padding-32">
   {% include header.html %}
-
-  <div class="container">
-        <header>
-            <h1>Estrofario para Daniela</h1>            
-        </header>
-        <p>        
-        Este <b>estrofario</b> contiene estrofas que fueron escritas entre el 28/set/2025 (día en que fuí bloqueado 
-        de su whatsapp) hasta el 27/set/2026. </p>
-        <p>Mi interés fue escribir una pequeña estrofa (dedicada a ti) por día durante un año, solo para mostrar lo mal que la 
-          estaba pasando; y bueno, no puede mantener el objetivo de este estrofario (ni la cordura) y al final, 
-          muchas de estas estrofas reflejan algún evento o situación en la que me vi inmiscuído psicológicamente 
-          y/o físicamente.</p>
-        <p>De verdad, lo siento de que algunas estrofas no traten sobre ella y sí, sobre mí... </p>
-        <p>Gracias por ser un ángel de luz que vino a iluminar mi mundo, 
-          y discúlpame por haber sido tu cruel verdugo...</p>
-
-       
-        
-        <div id="almanacOutput"></div>
-        <br>
-         <div class="selector-box">            
-            Esta es mi manera de pedirle perdón a ella, y la manera menos obvia para lavarme 
-            las manos como Poncio Pilatos...
-            <p>De verdad que lo siento...</p>
-    
-        </div>
-        
-    </div>
+  
+  <div class="w3-container w3-padding-32">
+    {{content}}    
+  </div>
+  
+  
   
 
   <!-- Footer -->
@@ -88,139 +66,6 @@ function w3_close() {
   document.getElementById("myOverlay").style.display = "none";
 }
 </script>
-<script>
-        const meses = [
-            "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-            "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"
-        ];
-        const diasSemana = ["Lu", "Ma", "Mi", "Ju", "Vi", "Sá", "Do"];
 
-        function generateCustomAlmanac() {
-            const startVal = "2025-09-28";
-            const endVal = "2026-02-31";
-
-            if (!startVal || !endVal) {
-                alert("Por favor, selecciona ambas fechas.");
-                return;
-            }
-
-            const startDate = new Date(startVal + 'T00:00:00');
-            const endDate = new Date(endVal + 'T00:00:00');
-
-            if (startDate > endDate) {
-                alert("La fecha inicial no puede ser posterior a la fecha final.");
-                return;
-            }
-
-            const startYear = startDate.getFullYear();
-            const endYear = endDate.getFullYear();
-
-            const output = document.getElementById('almanacOutput');
-            output.innerHTML = '';
-
-            const yearSection = document.createElement('div');
-            yearSection.className = 'year-section';
-
-            const grid = document.createElement('div');
-            grid.className = 'calendar-grid';
-
-
-
-            // Recorrer los años implicados
-            for (let year = startYear; year <= endYear; year++) {
-                // Determinar qué meses de este año se van a pintar
-                let startMonth = (year === startYear) ? startDate.getMonth() : 0;
-                let endMonth = (year === endYear) ? endDate.getMonth() : 11;
-
-                // Si no hay meses que pintar en este año, saltar (caso raro de seguridad)
-                if (startMonth > endMonth && year === startYear && year === endYear) continue;
-                
-                for (let month = startMonth; month <= endMonth; month++) {
-                    const card = document.createElement('div');
-                    const monthName  = `${meses[month]}-${year}`.toLowerCase();
-                    const monthLabel = month < 9? `0${month + 1}` : `${month + 1}`;
-                    card.className = 'month-card';
-
-                    const title = document.createElement('div');
-                    title.className = 'month-title';
-                    title.innerText = `${meses[month]} - ${year}`;
-                    
-                    card.appendChild(title);
-
-                    const weekdaysDiv = document.createElement('div');
-                    weekdaysDiv.className = 'weekdays';
-                    diasSemana.forEach(d => {
-                        const dayName = document.createElement('div');
-                        dayName.innerText = d;
-                        weekdaysDiv.appendChild(dayName);
-                    });
-                    card.appendChild(weekdaysDiv);
-
-                    const daysDiv = document.createElement('div');
-                    daysDiv.className = 'days';
-
-                    let firstDayIndex = new Date(year, month, 1).getDay();
-                    let adjustedFirstDay = firstDayIndex === 0 ? 6 : firstDayIndex - 1;
-                    const totalDays = new Date(year, month + 1, 0).getDate();
-
-                    // Rellenar días vacíos al inicio de la semana
-                    for (let i = 0; i < adjustedFirstDay; i++) {
-                        const emptyDay = document.createElement('div');
-                        emptyDay.className = 'day empty';
-                        daysDiv.appendChild(emptyDay);
-                    }
-
-                    // Iterar por los días reales del mes
-                    for (let day = 1; day <= totalDays; day++) {
-                        const dayLabel = day < 10 ? `0${day}` : `${day}`;
-                        const dayDiv = document.createElement('div');
-                        const currentFullDate = new Date(year, month, day);
-
-                        // Determinar estilo según si está dentro del rango estricto de días escogidos
-                        if (currentFullDate >= startDate && currentFullDate <= endDate) {
-                          ahref = document.createElement('a');
-                          ahref.innerHTML = day; 
-                          ahref.href = '{{site.baseurl}}/' + monthName + '/' + year + "/" + monthLabel + "/" + dayLabel + "/I.html"; 
-                          dayDiv.appendChild(ahref); 
-                          dayDiv.classList.add('in-range');
-                        } else {
-                          dayDiv.className = 'day';
-                          dayDiv.innerText = day;
-                          dayDiv.classList.add('out-of-range');
-                        }
-
-                        // Marcar domingos
-                        let currentDayOfWeek = (adjustedFirstDay + day - 1) % 7;
-                        if (currentDayOfWeek === 6) {
-                            dayDiv.classList.add('sunday');
-                        }
-
-                        daysDiv.appendChild(dayDiv);
-                    }
-
-                    card.appendChild(daysDiv);
-                    grid.appendChild(card);
-                }
-
-               
-            }
-            yearSection.appendChild(grid);
-            output.appendChild(yearSection);
-        }
-
-        // Ejecución inicial por defecto
-        generateCustomAlmanac();
-
-        function verifyPostExists(day, month, year) {    
-          const targetUrl = "/" + {month} + "-" + {year} + "/" + {year} + "/" + {month} + "/" + {day} + "/" + {day} + ".markdown"; 
-          try {
-            const response = fetch(targetUrl, { method: 'HEAD' });
-            return response.ok; // Returns true if status is 200-299
-          } catch {
-            return false; // Returns false if network error or 404
-          }
-        }
-          
-    </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+---
+layout: poema
+title:  "Soneto XXII"
+date:   2019-07-09 16:59:43 +0000
+category: Sonetos-2019
+---
+    Vamos despacio con las caipirinhas,
+    que dos o tres, son de felicidad.
+    La cuarta la festejas de boquinha,
+    la quinta viene sola por el mar.
+    
+    No hay nada mejor en esta vida
+    que una caipirinha para brindar,
+    una fiesta que dure todo el día
+    en una playa de felicidad.
+    
+    La arena dorada por la mañana;
+    unas caipirinhas para empezar.
+    El mar y la dicha en Copacabana,
+    y en Ipanema vamos a acabar.
+    
+    Vamos a festejar a Copacabana 
+    e Ipanema hasta dar con el mañana.

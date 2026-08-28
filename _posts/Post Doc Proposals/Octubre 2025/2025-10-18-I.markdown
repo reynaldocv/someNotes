@@ -1,9 +1,0 @@
----
-layout:     poema
-title:      "Octubre 18, 2025"
-date:       2025-10-18 00:00:00 +0000
-category:   Octubre-2025
----
-    Silencio...
-    no hay aire, ni hay viento, 
-    solo hay silencio...

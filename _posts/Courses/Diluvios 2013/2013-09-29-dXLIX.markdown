@@ -1,0 +1,13 @@
+---
+layout: poema
+title:  "Diluvios XLIX"
+date:   2013-10-23 16:59:43 +0000
+category: Diluvios-2013
+---
+        Voces y ecos en el bosque
+        susurrándole al viento, 
+        escucho tu nombre todo atento...
+
+        Y hay estrellas en la noche 
+        reflejaadas en el mar.
+        Hay un estrella fugaz...

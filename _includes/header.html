@@ -1,5 +1,11 @@
 <header class="w3-container w3-xlarge">
-  {% assign picture = "Background" %}
+  {% assign picture = page.title | default: "background" %}
+  {% assign picture = picture | replace: "-", " " | capitalize" %}  
+  {% if page.layout == 'poema' %}
+    {% assign picture = page.category | default: "background" %}
+    {% assign picture = picture | replace: "-", " " | capitalize" %}    
+  {% endif %}
+
   <div class="background-image">
     <img src=" {{ site.baseurl }}/assets/images/{{picture}}.png" width="100%">        
   </div>

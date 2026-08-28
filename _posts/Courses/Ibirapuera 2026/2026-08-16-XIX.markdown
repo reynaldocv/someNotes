@@ -1,0 +1,10 @@
+---
+layout:     poema
+title:      "Ibirapuera XIX"
+date:       2026-08-16 16:59:43 +0000
+category:   Ibirapuera-2026
+---
+    Y si vamos a la luna
+    en burbujas de jabón. 
+    Quizás se escuche a locura;
+    mejor, en un diente de león.
