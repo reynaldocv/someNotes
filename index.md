@@ -6,7 +6,7 @@ layout: home
 ---
 
 {% comment %} 1. Collect all unique directory paths from posts {% endcomment %}
-{% assign all_dirs = site.posts | map: "path" %}
+{% assign all_dirs = site.courses | map: "path" %}
 {% assign post_folders = "" | split: "," %}
 
 {% for path in all_dirs %}
