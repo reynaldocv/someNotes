@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Sand poems
+title: Some Notes
 email: reynaldocv@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A blog about sand poems and an expression about my crazyness.
@@ -47,12 +47,3 @@ jekyll-archives:
   permalinks:
     category: '/category/:name/'
 
-collections:
-  courses:
-    output: true
-    permalink: /:courses/:name/
-  works:
-    output: true
-    permalink: /:collection/:name/
-  recipes:
-    output: true

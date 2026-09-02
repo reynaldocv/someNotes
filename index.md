@@ -6,14 +6,14 @@ layout: home
 ---
 
 {% comment %} 1. Collect all unique directory paths from posts {% endcomment %}
-{% assign all_dirs = site.courses | map: "path" %}
+{% assign all_dirs = site.posts | map: "path" %}
 {% assign post_folders = "" | split: "," %}
 
 {% for path in all_dirs %}
   {% if path contains "/" %}
     {% assign parts = path | split: "/" %}
     {% comment %} Typically: _posts/folder/filename.md -> folder is at index 1 {% endcomment %}
-    {% assign folder_name = parts[1] %}
+    {% assign folder_name = parts[2] %}
     {% unless post_folders contains folder_name %}
       {% if folder_name contains ".md" or folder_name contains ".html" %}{% continue %}{% endif %}
       {% assign post_folders = post_folders | push: folder_name %}
