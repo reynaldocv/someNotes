@@ -13,7 +13,7 @@ layout: home
   {% if path contains "/" %}
     {% assign parts = path | split: "/" %}
     {% comment %} Typically: _posts/folder/filename.md -> folder is at index 1 {% endcomment %}
-    {% assign folder_name = parts[2] %}
+    {% assign folder_name = parts[1] %}
     {% unless post_folders contains folder_name %}
       {% if folder_name contains ".md" or folder_name contains ".html" %}{% continue %}{% endif %}
       {% assign post_folders = post_folders | push: folder_name %}
