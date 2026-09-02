@@ -47,3 +47,12 @@ jekyll-archives:
   permalinks:
     category: '/category/:name/'
 
+collections:
+  courses:
+    output: true
+    permalink: /:courses/:name/
+  works:
+    output: true
+    permalink: /:collection/:name/
+  recipes:
+    output: true
