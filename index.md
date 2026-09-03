@@ -30,26 +30,26 @@ layout: home
         <div class="contenedor-imagen">
           <img src="{{site.baseurl}}/assets/images/{{ main | capitalize }}.png">
           <div class="texto-centrado">{{ main | capitalize }}</div>
-        </div>
-      </div>                  
-      {% comment %} Buscar subcarpetas correspondientes a esta carpeta principal {% endcomment %}
-      {% assign sub_folders = "" | split: "," %}      
-      {% for path in all_paths %}
-        {% assign parts = path | split: "/" %}
-        {% if parts[1] == main and parts[2] and parts[3] %}
-          {% comment %} parts[2] es la subcarpeta (ej. '_posts/carpeta/subcarpeta/archivo.md') {% endcomment %}
-          {% assign sub_folders = sub_folders | push: parts[2] %}
-        {% endif %}
-      {% endfor %}      
-      {% assign unique_subs = sub_folders | uniq | sort %}      
-      {% comment %} Si existen subcarpetas, imprimirlas como una lista anidada {% endcomment %}
-      {% if unique_subs.size > 0 %}
-        <ul>
-        {% for sub in unique_subs %}
-          <li>  <a href="{{site.baseurl}}/category/{{sub}}"> {{sub | slugify}}</a></li>          
-        {% endfor %}
-        </ul>
-      {% endif %}     
+        </div>                        
+        {% comment %} Buscar subcarpetas correspondientes a esta carpeta principal {% endcomment %}
+        {% assign sub_folders = "" | split: "," %}      
+        {% for path in all_paths %}
+          {% assign parts = path | split: "/" %}
+          {% if parts[1] == main and parts[2] and parts[3] %}
+            {% comment %} parts[2] es la subcarpeta (ej. '_posts/carpeta/subcarpeta/archivo.md') {% endcomment %}
+            {% assign sub_folders = sub_folders | push: parts[2] %}
+          {% endif %}
+        {% endfor %}      
+        {% assign unique_subs = sub_folders | uniq | sort %}      
+        {% comment %} Si existen subcarpetas, imprimirlas como una lista anidada {% endcomment %}
+        {% if unique_subs.size > 0 %}
+          <ul>
+          {% for sub in unique_subs %}
+            <li>  <a href="{{site.baseurl}}/category/{{sub}}"> {{sub | slugify}}</a></li>          
+          {% endfor %}
+          </ul>
+        {% endif %}     
+      </div>
   </div>
   {% endfor %}
 </div>
