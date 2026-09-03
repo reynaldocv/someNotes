@@ -6,7 +6,7 @@
 
 .contenedor-imagen img {
   width: 100%; /* Ajusta según sea necesario */
-  height: auto;
+  height: 50px;
 }
 
 .texto-centrado {
