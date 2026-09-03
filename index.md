@@ -21,41 +21,45 @@ layout: home
 {% assign unique_mains = main_folders | uniq | sort %}
 
 {% comment %} 3. Construir la lista jerárquica {% endcomment %}
-<ul>
-{% for main in unique_mains %}
-  <li>
-    <div class="contenedor-imagen">
-      <img src="{{site.baseurl}}/assets/images/{{ main | capitalize }}.png">
-      <div class="texto-centrado">{{ main | capitalize }}</div>
-    </div>
-    <strong>{{ main | capitalize }}</strong>
-    
-    {% comment %} Buscar subcarpetas correspondientes a esta carpeta principal {% endcomment %}
-    {% assign sub_folders = "" | split: "," %}
-    
-    {% for path in all_paths %}
-      {% assign parts = path | split: "/" %}
-      {% if parts[1] == main and parts[2] and parts[3] %}
-        {% comment %} parts[2] es la subcarpeta (ej. '_posts/carpeta/subcarpeta/archivo.md') {% endcomment %}
-        {% assign sub_folders = sub_folders | push: parts[2] %}
-      {% endif %}
-    {% endfor %}
-    
-    {% assign unique_subs = sub_folders | uniq | sort %}
-    
-    {% comment %} Si existen subcarpetas, imprimirlas como una lista anidada {% endcomment %}
-    {% if unique_subs.size > 0 %}
-      <ul>
-      {% for sub in unique_subs %}
-        <li>  <a href="{{site.baseurl}}/category/{{sub | slugify}}"> {{sub | slugify}}</a></li>
-        
-      {% endfor %}
-      </ul>
-    {% endif %}
-  </li>
-{% endfor %}
-</ul>
+<div class="w3-row w3-grayscale">
+  <div class="w3-col l4 s6">
 
+  <ul>
+  {% for main in unique_mains %}
+    <li>
+      <div class="contenedor-imagen">
+        <img src="{{site.baseurl}}/assets/images/{{ main | capitalize }}.png">
+        <div class="texto-centrado">{{ main | capitalize }}</div>
+      </div>
+      <strong>{{ main | capitalize }}</strong>
+      
+      {% comment %} Buscar subcarpetas correspondientes a esta carpeta principal {% endcomment %}
+      {% assign sub_folders = "" | split: "," %}
+      
+      {% for path in all_paths %}
+        {% assign parts = path | split: "/" %}
+        {% if parts[1] == main and parts[2] and parts[3] %}
+          {% comment %} parts[2] es la subcarpeta (ej. '_posts/carpeta/subcarpeta/archivo.md') {% endcomment %}
+          {% assign sub_folders = sub_folders | push: parts[2] %}
+        {% endif %}
+      {% endfor %}
+      
+      {% assign unique_subs = sub_folders | uniq | sort %}
+      
+      {% comment %} Si existen subcarpetas, imprimirlas como una lista anidada {% endcomment %}
+      {% if unique_subs.size > 0 %}
+        <ul>
+        {% for sub in unique_subs %}
+          <li>  <a href="{{site.baseurl}}/category/{{sub | slugify}}"> {{sub | slugify}}</a></li>
+          
+        {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  </div>
+</div>
 
 {% comment %} 1. Collect all unique directory paths from posts {% endcomment %}
 {% assign all_dirs = site.posts | map: "path" %}
