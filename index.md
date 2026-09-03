@@ -5,6 +5,53 @@
 layout: home
 ---
 
+{% comment %} 1. Extraer los nombres de las carpetas principales y subcarpetas {% endcomment %}
+{% assign main_folders = "" | split: "," %}
+{% assign all_paths = site.posts | map: "path" %}
+
+{% for path in all_paths %}
+  {% assign parts = path | split: "/" %}
+  {% comment %} parts[0] suele ser '_posts' {% endcomment %}
+  {% if parts[1] %}
+    {% assign main_folders = main_folders | push: parts[1] %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} 2. Filtrar para tener solo carpetas principales únicas {% endcomment %}
+{% assign unique_mains = main_folders | uniq | sort %}
+
+{% comment %} 3. Construir la lista jerárquica {% endcomment %}
+<ul>
+{% for main in unique_mains %}
+  <li>
+    <strong>{{ main | capitalize }}</strong>
+    
+    {% comment %} Buscar subcarpetas correspondientes a esta carpeta principal {% endcomment %}
+    {% assign sub_folders = "" | split: "," %}
+    
+    {% for path in all_paths %}
+      {% assign parts = path | split: "/" %}
+      {% if parts[1] == main and parts[2] and parts[3] %}
+        {% comment %} parts[2] es la subcarpeta (ej. '_posts/carpeta/subcarpeta/archivo.md') {% endcomment %}
+        {% assign sub_folders = sub_folders | push: parts[2] %}
+      {% endif %}
+    {% endfor %}
+    
+    {% assign unique_subs = sub_folders | uniq | sort %}
+    
+    {% comment %} Si existen subcarpetas, imprimirlas como una lista anidada {% endcomment %}
+    {% if unique_subs.size > 0 %}
+      <ul>
+      {% for sub in unique_subs %}
+        <li>{{ sub }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+
 {% comment %} 1. Collect all unique directory paths from posts {% endcomment %}
 {% assign all_dirs = site.posts | map: "path" %}
 {% assign post_folders = "" | split: "," %}
@@ -20,6 +67,7 @@ layout: home
     {% endunless %}
   {% endif %}
 {% endfor %}
+
  <div class="w3-row w3-grayscale">
 {% comment %} 2. Iterate through each folder and show 3 items {% endcomment %}
 {% for folder in post_folders %}
