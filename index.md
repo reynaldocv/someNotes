@@ -27,9 +27,11 @@ layout: home
   <ul>
   {% for main in unique_mains %}
     <li>
-      <div class="contenedor-imagen">
-        <img src="{{site.baseurl}}/assets/images/{{ main | capitalize }}.png">
-        <div class="texto-centrado">{{ main | capitalize }}</div>
+      <div class="w3-container w3-whitesmoke">
+        <div class="contenedor-imagen">
+          <img src="{{site.baseurl}}/assets/images/{{ main | capitalize }}.png">
+          <div class="texto-centrado">{{ main | capitalize }}</div>
+        </div>
       </div>
       <strong>{{ main | capitalize }}</strong>
       
