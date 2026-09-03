@@ -62,8 +62,8 @@ layout: home
     </li>
       </ul>
   </div>
-</div>
   {% endfor %}
+</div>
 
 
 {% comment %} 1. Collect all unique directory paths from posts {% endcomment %}
