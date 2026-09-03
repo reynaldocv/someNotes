@@ -25,7 +25,7 @@ layout: home
 {% for main in unique_mains %}
   <li>
     <div class="contenedor-imagen">
-      <img src="{{site.baseurl}}/assets/images/{{main}}.png">
+      <img src="{{site.baseurl}}/assets/images/{{ main | capitalize }}.png">
       <div class="texto-centrado">{{ main | capitalize }}</div>
     </div>
     <strong>{{ main | capitalize }}</strong>
