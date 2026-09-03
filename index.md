@@ -45,7 +45,7 @@ layout: home
         {% if unique_subs.size > 0 %}
           <ul>
           {% for sub in unique_subs %}
-            <li>  <a href="{{site.baseurl}}/category/{{sub}}"> {{sub | slugify}}</a></li>          
+            <li>  <a href="{{site.baseurl}}/category/{{sub | slugify}}"> {{sub | slugify}}</a></li>          
           {% endfor %}
           </ul>
         {% endif %}     
