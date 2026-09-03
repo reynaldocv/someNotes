@@ -22,11 +22,11 @@ layout: home
 
 {% comment %} 3. Construir la lista jerárquica {% endcomment %}
 <div class="w3-row w3-grayscale">
-  <div class="w3-col l4 s6">
+  
 
-  <ul>
-  {% for main in unique_mains %}
-    <li>
+  {% for main in unique_mains %}    
+  <div class="w3-col l4 s6">
+  <ul>  
       <div class="w3-container w3-whitesmoke">
         <div class="contenedor-imagen">
           <img src="{{site.baseurl}}/assets/images/{{ main | capitalize }}.png">
@@ -34,6 +34,8 @@ layout: home
         </div>
       </div>
       <strong>{{ main | capitalize }}</strong>
+      <li>
+
       
       {% comment %} Buscar subcarpetas correspondientes a esta carpeta principal {% endcomment %}
       {% assign sub_folders = "" | split: "," %}
@@ -58,10 +60,11 @@ layout: home
         </ul>
       {% endif %}
     </li>
-  {% endfor %}
-  </ul>
+      </ul>
   </div>
 </div>
+  {% endfor %}
+
 
 {% comment %} 1. Collect all unique directory paths from posts {% endcomment %}
 {% assign all_dirs = site.posts | map: "path" %}
