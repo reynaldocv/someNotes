@@ -31,10 +31,7 @@ layout: home
           <img src="{{site.baseurl}}/assets/images/{{ main | capitalize }}.png">
           <div class="texto-centrado">{{ main | capitalize }}</div>
         </div>
-      </div>
-      <strong>{{ main | capitalize }}</strong>
-      <ul>      
-      <li>      
+      </div>                  
       {% comment %} Buscar subcarpetas correspondientes a esta carpeta principal {% endcomment %}
       {% assign sub_folders = "" | split: "," %}      
       {% for path in all_paths %}
@@ -52,9 +49,7 @@ layout: home
           <li>  <a href="{{site.baseurl}}/category/{{sub | slugify}}"> {{sub | slugify}}</a></li>          
         {% endfor %}
         </ul>
-      {% endif %}
-      </li>
-    </ul>
+      {% endif %}     
   </div>
   {% endfor %}
 </div>
