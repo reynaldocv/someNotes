@@ -24,6 +24,10 @@ layout: home
 <ul>
 {% for main in unique_mains %}
   <li>
+    <div class="contenedor-imagen">
+      <img src="{{site.baseurl}}/assets/images/{{main}}.png">
+      <div class="texto-centrado">{{ main | capitalize }}</div>
+    </div>
     <strong>{{ main | capitalize }}</strong>
     
     {% comment %} Buscar subcarpetas correspondientes a esta carpeta principal {% endcomment %}
